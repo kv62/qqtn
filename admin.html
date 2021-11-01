@@ -1,0 +1,52 @@
+<!DOCTYPE HTML><html><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+<link rel="dns-prefetch" href="//apps.bdimg.com" /><title>米表后台</title>
+<style>
+body,input,button,select,textarea{color:#444;font:14px NotoSansHans-Regular,AvenirNext-Regular,arial,Hiragino Sans GB,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif}
+a{color:#000;text-decoration:none}.cl:after{content:".";display:block;height:0;clear:both;visibility:hidden}.cl{zoom:1}.z{float:left}.y{float:right}
+input,select{font-size:16px}hr{margin:20px 0;border:0;border-top:1px solid #eee}
+h2{font-size:20px;font-weight:500}
+.main{line-height:25px;margin-bottom:20px}.wp{margin:auto;min-width:300px}
+.tb{border-collapse:collapse;border:none}.tb th,.tb td{border:1px solid #eee;padding:5px 12px;border-left-style:none;border-right-style:none;font-size:16px}
+.nav{margin:30px 0}
+.nav_link{float:left;padding-right:20px;font-size:16px}.nav_link:hover{color:#78cc8e}
+.nav_link::after{content:'';display:block;width:0;height:2px;background:#78cc8e;transition:width .3s}
+.nav_link:hover::after{width:100%}
+.jumbotron{border:1px #78cc8e solid;border-radius:4px;padding:48px 60px;margin:30px auto}
+.foot{margin:50px auto 30px;font-size:14px;clear:both}.foot .item{padding-right:20px}
+.btn{padding:6px 15px 3px;border-radius:4px;background-color:#78cc8e;color:#fff;display:inline-block;font-size:14px}.btn:hover{background-color:#69af7c}
+.row{clear:both;line-height:30px}.col1{width:150px;float:left}.col2{width:500px;float:left}.gray,.gray a{color:#ddd}
+#t_form dl{clear:both;line-height:35px}#t_form dt,#t_form dd{float:left}#t_form dt{width:100px}#t_form dd{width:350px}
+#instantclick-bar{background-color:#78cc8e}
+@media(min-width:1218px){.wp{width:1200px}}
+</style>
+<body>
+<div class="head">
+	<div class="wp">
+		<div class="nav">
+			<div class="y"><span style="font-size:14px">你好, admin</span>&nbsp;&nbsp;&nbsp;<a href="/logout" data-no-instant>退出</a></div>
+			<div class="z"><a class="nav_link" href="/t">米表设置</a></div>
+			<div class="cl"><div>
+		</div>
+	</div>
+</div>
+<div class="main">
+	<div class="wp">
+
+<h2>米表设置</h2>
+<form id="t_form" action="/t/set" method="post">
+<dl><dt>网站名称:</dt><dd><input type="text" name="sitename" value="MJJ的传家宝" /></dd></dl>
+<dl><dt>机表模板:</dt><dd><input type="text" name="tpl" size="10" value="default" /> 更多模板可关注官网更新</dd></dl>
+<dl><dt>朵说sid:</dt><dd><input type="text" name="sid" size="5" value="67" /> 如需开启留言, 请前往 <a href="http://duoshuo.net/" target="_blank">duoshuo.net</a> 获取sid</dd></dl>
+<dl><dt>统计代码:</dt><dd><textarea cols="100" rows="5" name="tj"></textarea><br>暂只支持百度统计, 其他请自己适配instantclick<br></dd></dl>
+<dl><dt>侧栏广告:</dt><dd><textarea cols="100" rows="5" name="ad"></textarea></dd><dd></dd></dl>
+<dl><dt>关于:</dt><dd><textarea cols="100" rows="5" name="about"></textarea></dd><dd></dd></dl>
+<dl><dt>&nbsp;</dt><dd><input type="submit" value="确定" /></dd></dl>
+</form>
+
+	</div>
+</div>
+<div class="foot">
+	<div class="wp"><span class="item">Deploy: <strong>Cloudflare Workers</strong></span><span class="item">Code: <strong>Wrangler.js</strong></span><span class="item">DB: <strong>Workers KV</strong></span></div>
+</div>
+</body></html>
