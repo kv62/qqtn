@@ -36,11 +36,14 @@ h2{font-size:20px;font-weight:500}
 <h2>米表设置</h2>
 <form id="t_form" action="/set" method="post">
 <dl><dt>网站名称:</dt><dd><input type="text" name="sitename" value="{{ sitename }}" /></dd></dl>
+<dl><dt>首页title:</dt><dd><input type="text" name="title" value="{{ title }}" /></dd></dl>
+<dl><dt>首页description:</dt><dd><input type="text" name="description" value="{{ description }}" /></dd></dl>
 <dl><dt>域名展示:</dt><dd><textarea cols="100" rows="5" name="mb">{{ mb }}</textarea></dd><dd></dd></dl>
-<dl><dt>朵说sid:</dt><dd><input type="text" name="sid" size="5" value="" /> 如需开启留言, 请前往 <a href="http://duoshuo.net/" target="_blank">duoshuo.net</a> 获取sid</dd></dl>
-<dl><dt>统计代码:</dt><dd><textarea cols="100" rows="5" name="tj"></textarea><br>暂只支持百度统计, 其他请自己适配instantclick<br></dd></dl>
-<dl><dt>侧栏广告:</dt><dd><textarea cols="100" rows="5" name="ad"></textarea></dd><dd></dd></dl>
-<dl><dt>关于:</dt><dd><textarea cols="100" rows="5" name="about"></textarea></dd><dd></dd></dl>
+<dl><dt>朵说sid:</dt><dd><input type="text" name="sid" size="5" value="{{ sid }}" /> 如需开启留言, 请前往 <a href="http://duoshuo.net/" target="_blank">duoshuo.net</a> 获取sid</dd></dl>
+<dl><dt>统计代码:</dt><dd><textarea cols="100" rows="5" name="tj">{{ tg }}</textarea><br>暂只支持百度统计, 其他请自己适配instantclick<br></dd></dl>
+<dl><dt>侧栏广告:</dt><dd><textarea cols="100" rows="5" name="ad">{{ ad }}</textarea></dd><dd></dd></dl>
+<dl><dt>BGM:</dt><dd><textarea cols="100" rows="5" name="bgm">{{ bgm }}</textarea></dd><dd></dd></dl>
+<dl><dt>关于:</dt><dd><textarea cols="100" rows="5" name="about">{{ about }}</textarea></dd><dd></dd></dl>
 <dl><dt>&nbsp;</dt><dd><input type="submit" value="确定" /></dd></dl>
 </form>
 
