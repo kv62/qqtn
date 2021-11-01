@@ -159,7 +159,7 @@ function tresize(){
 	if(w<768&&isc==0){getid('comment_r').innerHTML=getid('comment_l').innerHTML;getid('comment_l').innerHTML='';getid('side_comment').style.display='block';getid('comment_l').style.display='none';isc=1}else if(w>=768&&isc==1){getid('comment_l').innerHTML=getid('comment_r').innerHTML;getid('comment_r').innerHTML='';getid('side_comment').style.display='none';getid('comment_l').style.display='block';isc=0}
 }
 var allm=[],bgm_sum=6,bgm_infos=[],bgm_i=0,bgm_n=1;
-{{ bgm }}
+{{{ bgm }}}
 var audio=new Audio();audio.controls=true;audio.src=allm[1];audio.volume=0.5;
 if(localStorage.getItem('bgm_n')!=null){bgm_n=localStorage.getItem('bgm_n');audio.src=allm[bgm_n];}document.getElementById('bgm_info').innerHTML=bgm_infos[bgm_n];
 if(iosorsafari>0){
@@ -181,5 +181,6 @@ function bgm_next(){
 }
 audio.onended=function(){bgm_next();}
 function volc(){audio.volume=0;v=0;var t=setInterval(function(){v+=0.005;if(v<=0.5){audio.volume=v}else{clearInterval(t)}},25);}
+{{{ tj }}}
 </script>
 </body></html>
