@@ -97,7 +97,6 @@ aside li{line-height:45px;height:45px;overflow:hidden;list-style-type:none;font-
 </div>
 			</div>
 		</div>
-		<div class="content" id="comment_l" style="margin-top:15px;padding-top:20px;min-height:auto;display:none"></div>
 	</div>
 	<div class="side">
 		<div class="widget widget_links">
@@ -140,9 +139,6 @@ aside li{line-height:45px;height:45px;overflow:hidden;list-style-type:none;font-
 			<h3>其他</h3>
 			<div style="text-align:center"><br>非主流域名两千人QQ群：<span id="c_g"></span><br><a href="//shang.qq.com/wpa/qunwpa?idkey=2c528eed6518243b862fbdd89ac0e83bb798b7d7fc787a4b402bd519ec2f7a30" target="_blank"><img src="//ae01.alicdn.com/kf/HTB1iA9LU4YaK1RjSZFnq6y80pXag.jpg" width="200" height="200" /></a></div>
 		</div>
-		<div class="widget" id="side_comment">
-			<div id="comment_r" style="margin:10px"></div>
-		</div>
 	</div>
 </div>
 	<div class="cl"></div>
@@ -155,7 +151,7 @@ if((/iphone|ipad|ipod/.test(ua))||(/Safari/.test(u)&&!/Chrome/.test(u))){iosorsa
 var isc=1;tresize();
 function tresize(){
 	var w=parseInt(document.documentElement.clientWidth);
-	if(w<768&&isc==0){getid('comment_r').innerHTML=getid('comment_l').innerHTML;getid('comment_l').innerHTML='';getid('side_comment').style.display='block';getid('comment_l').style.display='none';isc=1}else if(w>=768&&isc==1){getid('comment_l').innerHTML=getid('comment_r').innerHTML;getid('comment_r').innerHTML='';getid('side_comment').style.display='none';getid('comment_l').style.display='block';isc=0}
+	if(w<768&&isc==0){isc=1}else if(w>=768&&isc==1){isc=0}
 }
 var allm=[],bgm_sum=6,bgm_infos=[],bgm_i=0,bgm_n=1;
 {{{ bgm }}}
